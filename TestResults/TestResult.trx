@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="462b3eea-c74a-48f8-a0cc-17aff789d57a" name="Admin@DESKTOP-1NQ8D83 2025-08-28 16:41:32" runUser="DESKTOP-1NQ8D83\Admin" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-08-28T16:41:32.4500386+07:00" queuing="2025-08-28T16:41:32.4500393+07:00" start="2025-08-28T16:41:23.0240226+07:00" finish="2025-08-28T16:41:46.3451667+07:00" />
+  <TestSettings name="default" id="b2cfdc07-dfc0-4476-b63d-6568732e449c">
+    <Deployment runDeploymentRoot="Admin_DESKTOP-1NQ8D83_2025-08-28_16_41_32" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="c8b56c89-834d-472d-9ebb-60b61888b84c" testId="93ec25f0-fc56-e25e-7325-5e3b261f9912" testName="runnCofig" computerName="DESKTOP-1NQ8D83" duration="00:00:08.5123940" startTime="2025-08-28T16:41:23.7963998+07:00" endTime="2025-08-28T16:41:32.3085203+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c8b56c89-834d-472d-9ebb-60b61888b84c">
+      <Output>
+        <StdOut>Set Up Sucessfull</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1f07de9c-966c-4ee7-9586-7236b557f275" testId="c436d2fe-fef1-2137-8e84-8c3d64398c75" testName="runnCofigError" computerName="DESKTOP-1NQ8D83" duration="00:00:13.5897120" startTime="2025-08-28T16:41:32.3175641+07:00" endTime="2025-08-28T16:41:45.9072747+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f07de9c-966c-4ee7-9586-7236b557f275">
+      <Output>
+        <StdOut>Set Up Sucessfull</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"link text","selector":"Demo1"}&#xD;
+  (Session info: chrome=139.0.7258.139); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception</Message>
+          <StackTrace>   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)&#xD;
+   at OpenQA.Selenium.By.&lt;.ctor&gt;b__6_0(ISearchContext context)&#xD;
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)&#xD;
+   at OpenQA.Selenium.WebDriver.FindElement(By by)&#xD;
+   at webNUnit.Pages.Config.demoLink(String name) in C:\Users\Admin\Desktop\webNUnit\webNUnit\Pages\Config.cs:line 17&#xD;
+   at webNUnit.Test.Tests.runnCofigError() in C:\Users\Admin\Desktop\webNUnit\webNUnit\Test\websabay.cs:line 29&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="runnCofig" storage="c:\users\admin\desktop\webnunit\webnunit\bin\debug\net8.0\webnunit.dll" id="93ec25f0-fc56-e25e-7325-5e3b261f9912">
+      <Execution id="c8b56c89-834d-472d-9ebb-60b61888b84c" />
+      <TestMethod codeBase="C:\Users\Admin\Desktop\webNUnit\webNUnit\bin\Debug\net8.0\webNUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="webNUnit.Test.Tests" name="runnCofig" />
+    </UnitTest>
+    <UnitTest name="runnCofigError" storage="c:\users\admin\desktop\webnunit\webnunit\bin\debug\net8.0\webnunit.dll" id="c436d2fe-fef1-2137-8e84-8c3d64398c75">
+      <Execution id="1f07de9c-966c-4ee7-9586-7236b557f275" />
+      <TestMethod codeBase="C:\Users\Admin\Desktop\webNUnit\webNUnit\bin\Debug\net8.0\webNUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="webNUnit.Test.Tests" name="runnCofigError" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="93ec25f0-fc56-e25e-7325-5e3b261f9912" executionId="c8b56c89-834d-472d-9ebb-60b61888b84c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c436d2fe-fef1-2137-8e84-8c3d64398c75" executionId="1f07de9c-966c-4ee7-9586-7236b557f275" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" passed="1" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.2.0.0: Test execution started&#xD;
+Running all tests in C:\Users\Admin\Desktop\webNUnit\webNUnit\bin\Debug\net8.0\webNUnit.dll&#xD;
+   NUnit3TestExecutor discovered 2 of 2 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+NUnit Adapter 4.2.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="DESKTOP-1NQ8D83" outcome="Warning" timestamp="2025-08-28T16:41:32.3635870+07:00">
+        <Text>Set Up Sucessfull&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-1NQ8D83" outcome="Warning" timestamp="2025-08-28T16:41:46.0213221+07:00">
+        <Text>Set Up Sucessfull&#xD;
+</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>
